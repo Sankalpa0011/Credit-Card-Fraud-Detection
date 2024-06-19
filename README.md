@@ -10,7 +10,7 @@ The objective of this project is to build a machine learning model that can dete
 
 ## Dataset
 
-The dataset used in this project is from the Kaggle competition: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+The dataset used in this project is from the Kaggle competition: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
 - **Number of Instances**: 284,807
 - **Number of Features**: 30
@@ -67,6 +67,39 @@ pip install -r requirements.txt
 
 ```bash
 jupyter notebook Credit\ Card\ Fraud\ Detection.ipynb
+```
+
+## Results
+
+### Model Performance
+
+- **Training Accuracy**: 0.9416
+- **Testing Accuracy**: 0.9492
+
+### Classification Reports
+
+**Training Classification Report**:
+```
+               precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       393
+           1       0.96      0.92      0.94       394
+
+    accuracy                           0.94       787
+   macro avg       0.94      0.94      0.94       787
+weighted avg       0.94      0.94      0.94       787
+```
+
+**Testing Classification Report**:
+```
+               precision    recall  f1-score   support
+
+           0       0.95      0.95      0.95        99
+           1       0.95      0.95      0.95        98
+
+    accuracy                           0.95       197
+   macro avg       0.95      0.95      0.95       197
+weighted avg       0.95      0.95      0.95       197
 ```
 
 ## Contributing
